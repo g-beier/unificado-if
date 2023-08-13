@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* CSS aqui */
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>CSS 01: Seletores e Regras</h1>
+      <p>
+        Vamos aprender como funcionam os seletores CSS e as regras para
+        estilizar as páginas HTML.
+      </p>
+    </header>
+    <main>
+      <section>
+        <h2>O que é CSS</h2>
+        <p>
+          A linguagem <abbr title="Cascading Style Sheets">CSS</abbr> é a forma
+          de estilizar as páginas HTML, garantindo que sua aparência seja
+          responsiva e de acordo com o desejado no projeto.
+        </p>
+        <p>
+          Além de formatar cores, tamanhos e posições, é papel do CSS garantir
+          que a página se adapte a todos os diferentes dispositivos que podem
+          acessar a página: aparelhos como computadores, que acessam com telas
+          de diferentes tamanhos; celulares, que são manipulados por toque, e
+          cujo teclado altera o tamanho disponível da tela; dispositivos de
+          acessibilidade, como leitores de tela; etc. Todas essas são
+          preocupações que devemos ter para garantir a melhor UX.
+        </p>
+      </section>
+      <section>
+        <h2>Sintaxe</h2>
+        <p>O CSS pode ser aplicado de três formas diferentes:</p>
+        <ul>
+          <li>
+            <em>inline</em>, através do atributo HTML
+            <code class="html">style</code>;
+          </li>
+          <li>
+            no arquivo HTML, através da tag HTML
+            <code class="html">&lt;style&gt;</code> no
+            <code class="html">&lt;head&gt;</code> do arquivo
+            <code class="file">.html</code>;
+          </li>
+          <li>
+            importando um arquivo <code class="file">.css</code> externo,
+            através de um <code class="html">&lt;link&gt;</code>, também no
+            <code class="html">&lt;head&gt;</code> do arquivo
+            <code class="file">.html</code>
+          </li>
+        </ul>
+        <p>
+          Nesta aula, vamos utilizar o segundo tipo: vamos editar o CSS deste
+          arquivo HTML através da tag
+          <code class="html">&lt;style&gt;</code> que está no
+          <code class="html">&lt;head&gt;</code>.
+        </p>
+        <p>
+          Primeiro, abra o arquivo no editor de texto. Em seguida, encontre a
+          tag <code class="html">&lt;style&gt;</code> e delete o comentário
+          <code class="css">/* CSS aqui */</code>.
+        </p>
+        <p>
+          Dentro do <code class="html">&lt;style&gt;</code>, onde estava o
+          comentário, vamos inserir nossa primeira regra CSS:
+          <code class="css">h1 {color: red;}</code>.
+        </p>
+        <ul>
+          <li>
+            <code class="css">h1</code> é o nosso <strong>seletor</strong>: é a
+            parte da regra que determina quais são os elementos CSS afetados
+            pelo estilo definido entre chaves.
+          </li>
+          <li>
+            <code class="css">color: red;</code> é uma
+            <strong>declaração</strong> CSS. As regras são formadas por diversas
+            declarações. Repare que a declaração tem a separação com os dois
+            pontos, e termina com ponto e vírgula.
+          </li>
+          <ul>
+            <li>
+              <code class="css">color</code> é a
+              <strong>propriedade</strong> desta declaração; ela informa qual a
+              propriedade que será alterada.
+            </li>
+            <li>
+              <code class="css">red</code> é o <strong>valor</strong> que será
+              assumido pela propriedade. Cada propriedade aceita valores
+              diferentes. Neste caso, estamos alterando a cor do texto, através
+              da propriedade <code class="css">color</code>. Esta propriedade
+              aceita cores em diferentes formados (HSL, RGB, HEX, etc.), além de
+              um conjunto pré-definido de cores chave.
+            </li>
+          </ul>
+        </ul>
+        <p>
+          Podemos fazer com que esta regra se aplique a vários seletores,
+          separando-os por vírgulas. Altere o seletor CSS para
+          <code class="css">h1, h2</code>, e o valor para
+          <code class="css">darkred</code> e observe o resultado.
+        </p>
+        <p>
+          Vamos alterar a cor do fundo (<code class="css">background-color</code
+          >) do corpo da nossa página (<code class="css">body</code>) para o
+          valor <code class="css">mistyrose</code>. Tente fazer isso sozinho, e
+          em caso de dúvida, clique no botão abaixo.
+        </p>
+
+        <button
+          onClick="document.getElementById('rule01').removeAttribute('style')"
+        >
+          Mostrar solução
+        </button>
+        <div id="rule01" style="visibility: hidden">
+          <code>body { background-color: mistyrose; }</code>
+          <p>
+            Cuide com a digitação, as chaves, dois pontos e ponto e vírgula no
+            final
+          </p>
+        </div>
+
+        <p>
+          Nosso próximo passo será estilizar os elementos
+          <code class="html">&lt;code&gt;</code>, os pequenos pedaços de código
+          ao longo do texto. Alguns deles se referem a código HTML, outros são
+          pedaços de código CSS, e temos ainda extensões de arquivos. Todos eles
+          já estão preparados para serem estilizados com classes.
+        </p>
+        <p>
+          Primeiro, estilize todos os <code class="html">&lt;code&gt;</code> com
+          as declarações
+          <code class="css">
+            display: inline-block; padding: 0.2em 0.5em; border-radius: 4px; </code
+          >. Estas são as declarações para deixar um espaço ao redor do
+          elemento. O <code class="css">padding</code> é aplicado ao redor do
+          elemento, dentro da borda. Para isso ser aplicado em um elemento
+          textual como o <code class="html">&lt;code&gt;</code>, precisamos que
+          ele tenha a propriedade <code class="css">display</code> com o valor
+          <code class="css">inline-block</code>. Por fim,
+          <code class="css">border-radius: 4px;</code> deixa os cantos
+          arredondados - o que será visível assim que atribuírmos cores aos
+          elementos.
+        </p>
+
+        <p>
+          Cada um dos tipos diferentes serão declarados com um formato de cores
+          diferentes, em regras diferentes. Estes formatos (RGB, HSL e HEX)
+          permitem uma maior customização das cores, e são mais comuns em
+          projetos reais. Para selecionarmos uma classe CSS, ao invés de apenas
+          escrever o nome da classe, como fizemos com os elementos HTML, vamos
+          iniciar com um ponto, como em
+          <code class="css">.class</code>Seguindo a tabela a seguir, monte as
+          três regras CSS corretamente:
+        </p>
+        <table>
+          <tr>
+            <th>Seletor CSS</th>
+            <th><code class="css">background-color</code></th>
+            <th><code class="css">color</code></th>
+          </tr>
+          <tr>
+            <td>
+              <code class="css">.html</code> <br />
+              RGB
+            </td>
+            <td><code class="css">rgb(160, 160, 255)</code></td>
+            <td><code class="css">rgb(23, 23, 95)</code></td>
+          </tr>
+          <tr>
+            <td>
+              <code class="css">.css</code> <br />
+              HSL
+            </td>
+            <td><code class="css">hsl(100, 70%, 85%)</code></td>
+            <td><code class="css">hsl(100, 70%, 15%)</code></td>
+          </tr>
+          <tr>
+            <td>
+              <code class="css">.file</code> <br />
+              HEX
+            </td>
+            <td><code class="css">#ceb6b6</code></td>
+            <td><code class="css">#2e1f1f</code></td>
+          </tr>
+        </table>
+        <p>
+          Por fim, vamos estilizar a tabela acima, de modo a facilitar a
+          leitura. A primeira coisa, será observar que elementos de tabela no
+          HTML são um tanto quanto complexos: eles são formados por diferentes
+          tags, que desempenham papéis diversos. Na construção desta tabela,
+          temos a seguinte estrutura:
+        </p>
+        <ul>
+          <li>
+            <code class="html">table</code>: a tabela como um elemento único.
+          </li>
+          <ul>
+            <li>
+              <code class="html"> tr </code>: a linha de cabeçalho da tabela.
+              Por vezes, é envolta em um elemento
+              <code class="html">thead</code>, especialmente se são várias
+              linhas de cabeçalho. A tag <code class="html">tr</code> significa
+              <em>table row</em>, ou seja, linha da tabela.
+            </li>
+            <ul>
+              <li>
+                Três <code class="html">th</code>, <em>table head</em>. São as
+                três células de cabeçalho da tabela, na primeira linha, que
+                possuem a estilização em negrito. Note que a tag HTML é
+                responsável pela diferença semântica, de sentido, desta célula
+                em relação às outras. Enquanto cada célula traz um dado, um
+                valor, esta diz a que este valor se refere: é um cabeçalho.
+              </li>
+            </ul>
+            <li>
+              Três <code class="html">tr</code>: a segunda, a terceira e a
+              quarta linha da tabela.
+            </li>
+            <ul>
+              <li>
+                Três <code class="html">td</code>, <em>table data</em>,
+                traduzidos para "datos da tabela". Cada
+                <code class="html">td</code> corresponde a uma das células da
+                tabela, naquela linha. No caso, o primeiro é o Seletor, o
+                segundo o <code class="css">background-color</code> e o
+                terceiro, a <code class="css">color</code>.
+              </li>
+            </ul>
+          </ul>
+        </ul>
+        <p>
+          Vamos aplicar as regras de forma progressiva, para compreender o papel
+          de cada uma delas.
+        </p>
+        <ol>
+          <li>
+            A primeira coisa será centralizar a tabela, a partir dos valores de
+            margem: <code class="css">table {margin: 2em auto;}</code>. Ao
+            declararmos dois valores para a propriedade
+            <code class="css">margin</code>, o primeiro valor será aplicado na
+            vertical - espaçando a tabela dos parágrafos - e o segundo, na
+            horizontal. O valor <code class="css">auto</code> faz com que seja
+            distribuído igualmente para ambos os lados, centralizando a tabela
+            na página.
+          </li>
+          <li>
+            Agora, vamos centralizar o texto da tabela:
+            <code class="css">text-align: center;</code>
+          </li>
+          <li>
+            Vamos colocar uma borda que separe e facilite a leitura com a regra
+            <code class="css">td { border: 1px solid black; }</code>. Repare que
+            esta regra se aplica apenas aos dados da tabela, e não ao cabeçalho.
+            Para que todas as células tenham uma borda, adicione ao seletor o
+            elemento <code class="css">th</code>.
+          </li>
+          <li>
+            As células da tabela não se encostam, todas tendo suas próprias
+            bordas. Normalmente, as tabelas não são assim, não é mesmo? Podemos
+            resolver isso com a declaração
+            <code class="css">border-collapse: collapse;</code> na regra do
+            seletor <code class="css">table</code>.
+          </li>
+          <li>
+            Outra coisa muito importante para garantir a legibilidade é o
+            <em>whitespace</em>, o espaço de respiro dos elementos. Para
+            garantir isso, vamos adicionar um
+            <code class="css">padding</code> nas células da tabela (tanto nas
+            <code class="html">&lt;th&gt;</code> quanto
+            <code class="html">&lt;td&gt;</code>). Aplique o valor
+            <code class="css">0.2em 0.8em;</code> na regra que já foi utilizada.
+          </li>
+          <li>
+            Por fim, vamos colocar uma borda mais espessa, que diferencia a
+            tabela dos demais elementos: coloque uma borda de
+            <code class="css">4px</code> no elemento
+            <code class="html">&lt;table&gt;</code>, seguindo os exemplos
+            anteriores.
+          </li>
+        </ol>
+        <h3>Agora é com você</h3>
+        <p>
+          Estilize o botão que está na página, usando as regras que você
+          aprendeu, com cores, bordas e espaçamentos diversos.
+        </p>
+      </section>
+    </main>
+  </body>
+</html>
