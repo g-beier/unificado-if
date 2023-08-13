@@ -10,6 +10,12 @@ Materiais para as aulas de Lógica e Programação dos Itinerários Formativos.
 
 A primeira aula de CSS serve como introdução à sintaxe do CSS, e apresenta diferentes assuntos, como as funções de cor (rgb e hsl), sistema hexadecimal de numeração (para cores HEX), o box model dos elementos na DOM, etc.
 
+### Próximas aulas
+
+- Funções de Cor (RGB, HSL)
+- Sistemas de Numeração (decimal, binário, hexadecimal)
+- Box model (conteúdo, padding, border e margin)
+
 ## CSS 02
 
 - Referência ao módulo CSS externo;
