@@ -1,6 +1,6 @@
 # unificado - itinerarios
 
-Materiais para as aulas de Lógica e Programação dos Itinerários Formativos.
+Materiais para as aulas de Lógica e Programação dos Itinerários Formativos. O objetivo destas aulas é apresentar o CSS de uma forma mais prática e autônoma, permitindo que os estudantes tenham aulas guiadas pelo próprio material, e se habituem a pesquisar e buscar as respostas de seus problemas.
 
 ## CSS 01
 
