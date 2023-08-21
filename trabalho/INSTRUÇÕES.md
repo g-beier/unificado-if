@@ -19,14 +19,15 @@ Suas perguntas para o chatGPT devem ser anotadas, adicionadas como um subtítulo
 
 - HTML semântico
   -- Adicionar corretamente as tags de marcação, em especial `<h1-h6>`, `<a>` e `<p>`;
-  -- Dividir adequadamente as `sections` do texto.
+  -- Utilizar as tags no `<head>` do documento para declarar título, autores, descrição e palavras-chave.
+  -- Dividir adequadamente as `sections` do texto;
   -- Utilizar os atributos de acessibilidade corretos (`<date>`, `<img alt="descrição das imagens">`, etc.)
 - CSS: metodologia BEM
-  -- Pesquisar a metodologia BEM (Block, Element, Modifier) e utilizá-la na estilização
-  -- Legibilidade e acessibilidade (contraste, tamanho de fonte, espaçamento, etc.)
-  -- Senso estético
-  -- CSS externo > tag `<style>` > CSS inline
-  -- Importar fonte do Google Fonts e declarar fontes de _fallback_
+  -- Pesquisar a metodologia BEM (Block, Element, Modifier) e utilizá-la na estilização;
+  -- Legibilidade e acessibilidade (contraste, tamanho de fonte, espaçamento, etc.);
+  -- Senso estético;
+  -- CSS externo > tag `<style>` > CSS inline;
+  -- Importar fonte do Google Fonts e declarar fontes de _fallback_.
 
 ## Referências
 
