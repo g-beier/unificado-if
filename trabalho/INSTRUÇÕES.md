@@ -3,7 +3,8 @@
 Atividade avaliativa do Itinerário Formativo de Lógica e Programação (2023/2).
 
 Nesta atividade, vamos trabalhar com HTML e CSS para estilizar um documento textual `.html`.
-*ATIVIDADE EM GRUPOS DE ATÉ 04 PESSOAS.* **ENTREGA ATÉ 12/SETEMBRO** PRO EMAIL gustav.beier@professores.unificado.com.br
+
+_ATIVIDADE EM GRUPOS DE ATÉ 04 PESSOAS._ **ENTREGA ATÉ 12/SETEMBRO** PRO EMAIL gustav.beier@professores.unificado.com.br
 
 ## Orientações
 
@@ -19,16 +20,16 @@ Suas perguntas para o chatGPT devem ser anotadas, adicionadas como um subtítulo
 ## Critérios de Avaliação
 
 - HTML semântico
-    - Adicionar corretamente as tags de marcação, em especial `<h1-h6>`, `<a>` e `<p>`;
-    - Utilizar as tags no `<head>` do documento para declarar título, autores, descrição e palavras-chave.
-    - Dividir adequadamente as `sections` do texto;
-    - Utilizar os atributos de acessibilidade corretos (`<date>`, `<img alt="descrição das imagens">`, etc.)
+  - Adicionar corretamente as tags de marcação, em especial `<h1-h6>`, `<a>` e `<p>`;
+  - Utilizar as tags no `<head>` do documento para declarar título, autores, descrição e palavras-chave.
+  - Dividir adequadamente as `sections` do texto;
+  - Utilizar os atributos de acessibilidade corretos (`<date>`, `<img alt="descrição das imagens">`, etc.)
 - CSS: metodologia BEM
-    - Pesquisar a metodologia BEM (Block, Element, Modifier) e utilizá-la na estilização;
-    - Legibilidade e acessibilidade (contraste, tamanho de fonte, espaçamento, etc.);
-    - Senso estético;
-    - CSS externo > tag `<style>` > CSS inline;
-    - Importar fonte do Google Fonts e declarar fontes de _fallback_.
+  - Pesquisar a metodologia BEM (Block, Element, Modifier) e utilizá-la na estilização;
+  - Legibilidade e acessibilidade (contraste, tamanho de fonte, espaçamento, etc.);
+  - Senso estético;
+  - CSS externo > tag `<style>` > CSS inline;
+  - Importar fonte do Google Fonts e declarar fontes de _fallback_.
 
 ## Referências
 
