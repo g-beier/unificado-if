@@ -15,7 +15,8 @@ Suas perguntas para o chatGPT devem ser anotadas, adicionadas como um subtítulo
 - Desenvolvimento (dez parágrafos)
 - Conclusão (cinco parágrafos)
 - Referências (podem ser falsas, criadas pelo ChatGPT mesmo)
-  Contrua tudo isso em um mesmo Chat, e peça ao final que o ChatGPT elabore um resumo de 15 linhas para adicionar no início de seu texto no HTML.
+
+Contrua tudo isso em um mesmo Chat, e peça ao final que o ChatGPT elabore um resumo de 15 linhas para adicionar no início de seu texto no HTML.
 
 ## Critérios de Avaliação
 
