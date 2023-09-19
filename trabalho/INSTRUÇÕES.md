@@ -4,7 +4,7 @@ Atividade avaliativa do Itinerário Formativo de Lógica e Programação (2023/2
 
 Nesta atividade, vamos trabalhar com HTML e CSS para estilizar um documento textual `.html`.
 
-_ATIVIDADE EM GRUPOS DE ATÉ 04 PESSOAS._ **ENTREGA ATÉ 12/SETEMBRO** PRO EMAIL gustav.beier@professores.unificado.com.br
+_ATIVIDADE EM GRUPOS DE ATÉ 04 PESSOAS._ **ENTREGA ADIADA ATÉ 23/OUTUBRO** PRO EMAIL gustav.beier@professores.unificado.com.br
 
 ## Orientações
 
